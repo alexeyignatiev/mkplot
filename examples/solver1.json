@@ -1,0 +1,510 @@
+{
+    "stats": {
+        "instance32": {
+            "status": true,
+            "rtime": 152.3262,
+            "mempeak": "214016 KiB"
+        },
+        "instance33": {
+            "status": true,
+            "rtime": 141.9863,
+            "mempeak": "389120 KiB"
+        },
+        "instance30": {
+            "status": true,
+            "rtime": 126.5003,
+            "mempeak": "245760 KiB"
+        },
+        "instance31": {
+            "status": true,
+            "rtime": 119.1347,
+            "mempeak": "25600 KiB"
+        },
+        "instance36": {
+            "status": true,
+            "rtime": 176.7886,
+            "mempeak": "432128 KiB"
+        },
+        "instance37": {
+            "status": true,
+            "rtime": 41.7866,
+            "mempeak": "162816 KiB"
+        },
+        "instance34": {
+            "status": true,
+            "rtime": 194.9343,
+            "mempeak": "9216 KiB"
+        },
+        "instance35": {
+            "status": true,
+            "rtime": 38.2602,
+            "mempeak": "481280 KiB"
+        },
+        "instance38": {
+            "status": true,
+            "rtime": 47.516,
+            "mempeak": "346112 KiB"
+        },
+        "instance39": {
+            "status": true,
+            "rtime": 83.8463,
+            "mempeak": "256000 KiB"
+        },
+        "instance98": {
+            "status": true,
+            "rtime": 379.4744,
+            "mempeak": "499712 KiB"
+        },
+        "instance99": {
+            "status": true,
+            "rtime": 788.865,
+            "mempeak": "420864 KiB"
+        },
+        "instance94": {
+            "status": true,
+            "rtime": 392.9865,
+            "mempeak": "452608 KiB"
+        },
+        "instance95": {
+            "status": true,
+            "rtime": 428.84,
+            "mempeak": "314368 KiB"
+        },
+        "instance96": {
+            "status": true,
+            "rtime": 772.1114,
+            "mempeak": "4096 KiB"
+        },
+        "instance97": {
+            "status": true,
+            "rtime": 346.7964,
+            "mempeak": "281600 KiB"
+        },
+        "instance90": {
+            "status": true,
+            "rtime": 557.5511,
+            "mempeak": "431104 KiB"
+        },
+        "instance91": {
+            "status": true,
+            "rtime": 432.9616,
+            "mempeak": "450560 KiB"
+        },
+        "instance92": {
+            "status": true,
+            "rtime": 510.4372,
+            "mempeak": "369664 KiB"
+        },
+        "instance93": {
+            "status": true,
+            "rtime": 142.9602,
+            "mempeak": "389120 KiB"
+        },
+        "instance21": {
+            "status": true,
+            "rtime": 164.851,
+            "mempeak": "380928 KiB"
+        },
+        "instance20": {
+            "status": true,
+            "rtime": 2.4147,
+            "mempeak": "260096 KiB"
+        },
+        "instance23": {
+            "status": true,
+            "rtime": 74.5844,
+            "mempeak": "145408 KiB"
+        },
+        "instance22": {
+            "status": true,
+            "rtime": 69.6312,
+            "mempeak": "330752 KiB"
+        },
+        "instance25": {
+            "status": true,
+            "rtime": 184.3031,
+            "mempeak": "502784 KiB"
+        },
+        "instance24": {
+            "status": true,
+            "rtime": 196.5466,
+            "mempeak": "360448 KiB"
+        },
+        "instance27": {
+            "status": true,
+            "rtime": 5.4189,
+            "mempeak": "65536 KiB"
+        },
+        "instance26": {
+            "status": true,
+            "rtime": 36.4459,
+            "mempeak": "457728 KiB"
+        },
+        "instance29": {
+            "status": true,
+            "rtime": 163.3557,
+            "mempeak": "263168 KiB"
+        },
+        "instance28": {
+            "status": true,
+            "rtime": 182.6557,
+            "mempeak": "115712 KiB"
+        },
+        "instance83": {
+            "status": true,
+            "rtime": 894.45,
+            "mempeak": "11264 KiB"
+        },
+        "instance82": {
+            "status": true,
+            "rtime": 560.4319,
+            "mempeak": "289792 KiB"
+        },
+        "instance81": {
+            "status": true,
+            "rtime": 673.9072,
+            "mempeak": "518144 KiB"
+        },
+        "instance80": {
+            "status": false,
+            "rtime": 1000.0,
+            "mempeak": "330752 KiB"
+        },
+        "instance87": {
+            "status": true,
+            "rtime": 712.2565,
+            "mempeak": "271360 KiB"
+        },
+        "instance86": {
+            "status": true,
+            "rtime": 242.3616,
+            "mempeak": "13312 KiB"
+        },
+        "instance85": {
+            "status": true,
+            "rtime": 749.3951,
+            "mempeak": "150528 KiB"
+        },
+        "instance84": {
+            "status": true,
+            "rtime": 237.2308,
+            "mempeak": "111616 KiB"
+        },
+        "instance89": {
+            "status": true,
+            "rtime": 90.243,
+            "mempeak": "431104 KiB"
+        },
+        "instance88": {
+            "status": false,
+            "rtime": 1000.0,
+            "mempeak": "53248 KiB"
+        },
+        "instance14": {
+            "status": true,
+            "rtime": 54.3457,
+            "mempeak": "199680 KiB"
+        },
+        "instance15": {
+            "status": true,
+            "rtime": 133.7901,
+            "mempeak": "198656 KiB"
+        },
+        "instance16": {
+            "status": true,
+            "rtime": 143.2799,
+            "mempeak": "76800 KiB"
+        },
+        "instance17": {
+            "status": true,
+            "rtime": 44.1856,
+            "mempeak": "261120 KiB"
+        },
+        "instance10": {
+            "status": true,
+            "rtime": 1.9281,
+            "mempeak": "330752 KiB"
+        },
+        "instance11": {
+            "status": true,
+            "rtime": 123.5724,
+            "mempeak": "362496 KiB"
+        },
+        "instance12": {
+            "status": true,
+            "rtime": 128.645,
+            "mempeak": "22528 KiB"
+        },
+        "instance13": {
+            "status": true,
+            "rtime": 117.9125,
+            "mempeak": "367616 KiB"
+        },
+        "instance18": {
+            "status": true,
+            "rtime": 112.592,
+            "mempeak": "429056 KiB"
+        },
+        "instance19": {
+            "status": true,
+            "rtime": 134.6126,
+            "mempeak": "271360 KiB"
+        },
+        "instance78": {
+            "status": true,
+            "rtime": 590.3233,
+            "mempeak": "280576 KiB"
+        },
+        "instance79": {
+            "status": true,
+            "rtime": 261.3116,
+            "mempeak": "498688 KiB"
+        },
+        "instance76": {
+            "status": true,
+            "rtime": 895.2961,
+            "mempeak": "245760 KiB"
+        },
+        "instance77": {
+            "status": true,
+            "rtime": 614.2801,
+            "mempeak": "165888 KiB"
+        },
+        "instance74": {
+            "status": true,
+            "rtime": 543.2072,
+            "mempeak": "373760 KiB"
+        },
+        "instance75": {
+            "status": true,
+            "rtime": 484.566,
+            "mempeak": "218112 KiB"
+        },
+        "instance72": {
+            "status": false,
+            "rtime": 1000.0,
+            "mempeak": "475136 KiB"
+        },
+        "instance73": {
+            "status": true,
+            "rtime": 74.5493,
+            "mempeak": "231424 KiB"
+        },
+        "instance70": {
+            "status": true,
+            "rtime": 590.4992,
+            "mempeak": "173056 KiB"
+        },
+        "instance71": {
+            "status": true,
+            "rtime": 552.754,
+            "mempeak": "12288 KiB"
+        },
+        "instance2": {
+            "status": true,
+            "rtime": 17.197,
+            "mempeak": "230400 KiB"
+        },
+        "instance3": {
+            "status": true,
+            "rtime": 80.8731,
+            "mempeak": "241664 KiB"
+        },
+        "instance1": {
+            "status": true,
+            "rtime": 4.6136,
+            "mempeak": "358400 KiB"
+        },
+        "instance6": {
+            "status": true,
+            "rtime": 1.3634,
+            "mempeak": "175104 KiB"
+        },
+        "instance7": {
+            "status": true,
+            "rtime": 102.321,
+            "mempeak": "478208 KiB"
+        },
+        "instance4": {
+            "status": true,
+            "rtime": 66.8706,
+            "mempeak": "411648 KiB"
+        },
+        "instance5": {
+            "status": true,
+            "rtime": 199.701,
+            "mempeak": "442368 KiB"
+        },
+        "instance8": {
+            "status": true,
+            "rtime": 45.8964,
+            "mempeak": "430080 KiB"
+        },
+        "instance9": {
+            "status": true,
+            "rtime": 58.8135,
+            "mempeak": "260096 KiB"
+        },
+        "instance69": {
+            "status": true,
+            "rtime": 221.7435,
+            "mempeak": "142336 KiB"
+        },
+        "instance68": {
+            "status": true,
+            "rtime": 293.9778,
+            "mempeak": "141312 KiB"
+        },
+        "instance65": {
+            "status": true,
+            "rtime": 492.8131,
+            "mempeak": "65536 KiB"
+        },
+        "instance64": {
+            "status": true,
+            "rtime": 84.1849,
+            "mempeak": "124928 KiB"
+        },
+        "instance67": {
+            "status": true,
+            "rtime": 487.3995,
+            "mempeak": "419840 KiB"
+        },
+        "instance66": {
+            "status": true,
+            "rtime": 397.1919,
+            "mempeak": "62464 KiB"
+        },
+        "instance61": {
+            "status": true,
+            "rtime": 445.1688,
+            "mempeak": "134144 KiB"
+        },
+        "instance60": {
+            "status": true,
+            "rtime": 221.8447,
+            "mempeak": "507904 KiB"
+        },
+        "instance63": {
+            "status": true,
+            "rtime": 544.9736,
+            "mempeak": "290816 KiB"
+        },
+        "instance62": {
+            "status": true,
+            "rtime": 294.5508,
+            "mempeak": "248832 KiB"
+        },
+        "instance100": {
+            "status": true,
+            "rtime": 410.851,
+            "mempeak": "322560 KiB"
+        },
+        "instance50": {
+            "status": true,
+            "rtime": 65.6477,
+            "mempeak": "232448 KiB"
+        },
+        "instance51": {
+            "status": true,
+            "rtime": 54.5806,
+            "mempeak": "317440 KiB"
+        },
+        "instance52": {
+            "status": true,
+            "rtime": 306.7591,
+            "mempeak": "5120 KiB"
+        },
+        "instance53": {
+            "status": true,
+            "rtime": 274.3517,
+            "mempeak": "429056 KiB"
+        },
+        "instance54": {
+            "status": true,
+            "rtime": 160.419,
+            "mempeak": "181248 KiB"
+        },
+        "instance55": {
+            "status": true,
+            "rtime": 387.1159,
+            "mempeak": "233472 KiB"
+        },
+        "instance56": {
+            "status": true,
+            "rtime": 303.1698,
+            "mempeak": "487424 KiB"
+        },
+        "instance57": {
+            "status": true,
+            "rtime": 582.7249,
+            "mempeak": "411648 KiB"
+        },
+        "instance58": {
+            "status": true,
+            "rtime": 306.2356,
+            "mempeak": "489472 KiB"
+        },
+        "instance59": {
+            "status": true,
+            "rtime": 406.7282,
+            "mempeak": "112640 KiB"
+        },
+        "instance47": {
+            "status": true,
+            "rtime": 472.182,
+            "mempeak": "442368 KiB"
+        },
+        "instance46": {
+            "status": true,
+            "rtime": 398.7485,
+            "mempeak": "340992 KiB"
+        },
+        "instance45": {
+            "status": true,
+            "rtime": 321.2542,
+            "mempeak": "359424 KiB"
+        },
+        "instance44": {
+            "status": true,
+            "rtime": 21.1671,
+            "mempeak": "505856 KiB"
+        },
+        "instance43": {
+            "status": true,
+            "rtime": 231.7043,
+            "mempeak": "489472 KiB"
+        },
+        "instance42": {
+            "status": true,
+            "rtime": 485.5096,
+            "mempeak": "488448 KiB"
+        },
+        "instance41": {
+            "status": true,
+            "rtime": 19.5951,
+            "mempeak": "308224 KiB"
+        },
+        "instance40": {
+            "status": true,
+            "rtime": 112.9365,
+            "mempeak": "45056 KiB"
+        },
+        "instance49": {
+            "status": true,
+            "rtime": 191.2439,
+            "mempeak": "473088 KiB"
+        },
+        "instance48": {
+            "status": true,
+            "rtime": 551.279,
+            "mempeak": "262144 KiB"
+        }
+    },
+    "preamble": {
+        "benchmark": "my-benchmark-set",
+        "prog_args": "-a hello --arg2 world -v",
+        "program": "very_nice_solver",
+        "prog_alias": "vns"
+    }
+}
