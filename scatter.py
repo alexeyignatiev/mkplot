@@ -15,6 +15,8 @@ import matplotlib.pyplot as plt
 from matplotlib import __version__ as mpl_version
 import numpy as np
 from plot import Plot
+import six
+from six.moves import range
 
 
 #
@@ -145,7 +147,7 @@ class Scatter(Plot, object):
         ax.yaxis.set_major_formatter(majorFormatter)
 
         # setting frame thickness
-        for i in ax.spines.itervalues():
+        for i in six.itervalues(ax.spines):
             i.set_linewidth(1)
 
         plt.savefig(self.save_to, bbox_inches='tight', transparent=self.transparent)
@@ -203,7 +205,7 @@ class Scatter(Plot, object):
     #     yy = []
     #     rgba_c =[]
     #     rgba_e =[]
-    #     for l in xrange(len(xs)):
+    #     for l in range(len(xs)):
     #         xx.extend(xs[l])
     #         yy.extend(ys[l])
 
@@ -246,7 +248,7 @@ class Scatter(Plot, object):
     #     ax.yaxis.set_major_formatter(majorFormatter)
 
     #     # setting frame thickness
-    #     for i in ax.spines.itervalues():
+    #     for i in six.itervalues(ax.spines):
     #         i.set_linewidth(1)
 
     #     plt.savefig(self.save_to, bbox_inches='tight', transparent=self.transparent)
@@ -269,11 +271,11 @@ class Scatter(Plot, object):
     #             pdup[p] = 1
     #             pset.add(p)
 
-    #     maxdups = max(pdup.itervalues())
-    #     xs = [[] for i in xrange(maxdups)]
-    #     ys = [[] for i in xrange(maxdups)]
+    #     maxdups = max(six.itervalues(pdup))
+    #     xs = [[] for i in range(maxdups)]
+    #     ys = [[] for i in range(maxdups)]
 
-    #     for p, l in pdup.iteritems():
+    #     for p, l in six.iteritems(pdup):
     #         xs[l - 1].append(p[0])
     #         ys[l - 1].append(p[1])
 

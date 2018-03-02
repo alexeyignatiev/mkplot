@@ -17,6 +17,7 @@ import math
 import numpy as np
 import os
 from plot import Plot
+import six
 
 
 #
@@ -105,7 +106,7 @@ class Cactus(Plot, object):
             fr.set_edgecolor('black')
 
         # setting frame thickness
-        for i in ax.spines.itervalues():
+        for i in six.itervalues(ax.spines):
             i.set_linewidth(1)
 
         plt.savefig(self.save_to, bbox_inches='tight', transparent=self.transparent)

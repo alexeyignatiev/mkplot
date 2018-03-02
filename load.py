@@ -13,6 +13,7 @@
 import csv
 import json
 import statutil
+import six
 import sys
 
 
@@ -120,7 +121,7 @@ def load_json(stat_arr, options):
                     p = p.strip()
 
                     if p in tools:
-                        for inst, d in stat_obj.data.iteritems():
+                        for inst, d in six.iteritems(stat_obj.data):
                             if d['status'] == True:
                                 if d[options['key']] >= float(options['timeout']):
                                     d[options['key']] = max_value
@@ -130,7 +131,7 @@ def load_json(stat_arr, options):
                                 vals[inst] = max([min_val, min([d[options['key']], vals[inst]])])
             else:  # VBS among all the tools
                 for stat_obj in stat_arr:
-                    for inst, d in stat_obj.data.iteritems():
+                    for inst, d in six.iteritems(stat_obj.data):
                         if d['status'] == True:
                             if d[options['key']] >= float(options['timeout']):
                                 d[options['key']] = max_value
@@ -140,7 +141,7 @@ def load_json(stat_arr, options):
                             vals[inst] = max([min_val, min([d[options['key']], vals[inst]])])
 
             last_val = -1
-            for v in vals.itervalues():
+            for v in six.itervalues(vals):
                 if v > last_val and v < max_value:
                     last_val = v
 
@@ -152,7 +153,7 @@ def load_json(stat_arr, options):
     if options['repls']:
         data = [(options['repls'][n], v, s, l) if n in options['repls'] else (n, v, s, l) for n, v, s, l in data]
 
-    return sorted(data, key=lambda x: (x[2], -x[3]), reverse=not options['reverse'])
+    return sorted(data, key=lambda x: x[2] * sum(x[1]) / len(x[1]), reverse=not options['reverse'])
 
 
 #
