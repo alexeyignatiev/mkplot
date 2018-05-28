@@ -32,10 +32,11 @@ def parse_options():
 
     try:
         opts, args = getopt.getopt(sys.argv[1:],
-                                   'a:b:c:f:hj:k:lp:r:t:',
+                                   'a:b:c:df:hj:k:lp:r:t:',
                                    ['alpha=',
                                     'backend=',
                                     'config=',
+                                    'dry-run',
                                     'font=',
                                     'font-sz=',
                                     'no-grid',
@@ -92,6 +93,8 @@ def parse_options():
             options['backend'] = str(arg)
         elif opt in ('-c', '--config'):
             pass  # already processed
+        elif opt in ('-d', '--dry-run'):
+            options['dry_run'] = True
         elif opt in ('-f', '--font'):
             options['font'] = str(arg)
         elif opt == '--font-sz':
@@ -175,6 +178,7 @@ def usage():
     print('        -b, --backend=<string>          Backend to use')
     print('                                        Available values: pdf, pgf, png, ps, svg (default = pdf)')
     print('        -c, --config=<string>           Path to the default configuration file (default = $MKPLOT/defaults.json)')
+    print('        -d, --dry-run                   Do not create a plot but instead show the tools sorted in the terminal')
     print('        -f, --font=<string>             Font to use')
     print('                                        Available values: cmr, helvetica, palatino, times (default = times)')
     print('        --font-sz=<int>                 Font size to use')
@@ -237,9 +241,17 @@ if __name__ == '__main__':
 
     data = load_data(fns, options)
 
-    if options['plot_type'] == 'cactus':
-        plotter = Cactus(options)
+    if options['dry_run']:
+        for d in data:
+            print('{0}:'.format(d[0]))
+            print('    # solved: {0}'.format(d[2]))
+            print('    min. val: {0:.1f}'.format(float(min(d[1]))))
+            print('    max. val: {0:.1f}'.format(float(min(max(d[1]), options['timeout']))))
+            print('    avg. val: {0:.1f}'.format(float(sum(d[1])) / len(d[1])))
     else:
-        plotter = Scatter(options)
+        if options['plot_type'] == 'cactus':
+            plotter = Cactus(options)
+        else:
+            plotter = Scatter(options)
 
-    plotter.create(data)
+        plotter.create(data)
