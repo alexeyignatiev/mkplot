@@ -243,11 +243,13 @@ if __name__ == '__main__':
 
     if options['dry_run']:
         for d in data:
+            d1 = map(lambda x: min(x, options['timeout']), d[1])
+
             print('{0}:'.format(d[0]))
             print('    # solved: {0}'.format(d[2]))
-            print('    min. val: {0:.1f}'.format(float(min(d[1]))))
-            print('    max. val: {0:.1f}'.format(float(min(max(d[1]), options['timeout']))))
-            print('    avg. val: {0:.1f}'.format(float(sum(d[1])) / len(d[1])))
+            print('    min. val: {0:.1f}'.format(float(min(d1))))
+            print('    max. val: {0:.1f}'.format(float(max(d1))))
+            print('    avg. val: {0:.1f}'.format(float(sum(d1)) / len(d1)))
     else:
         if options['plot_type'] == 'cactus':
             plotter = Cactus(options)
