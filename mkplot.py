@@ -243,7 +243,7 @@ if __name__ == '__main__':
 
     if options['dry_run']:
         for d in data:
-            d1 = map(lambda x: min(x, options['timeout']), d[1])
+            d1 = list(map(lambda x: min(x, options['timeout']), d[1]))
 
             print('{0}:'.format(d[0]))
             print('    # solved: {0}'.format(d[2]))
