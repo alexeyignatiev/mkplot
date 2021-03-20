@@ -43,6 +43,7 @@
     {
         "alpha": 0.3,
         "backend": "pdf",
+        "by_name": false,
         "dry_run": false,
         "font": "times",
         "font_sz": 12.0,

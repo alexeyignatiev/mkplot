@@ -11,6 +11,7 @@
 #
 #==============================================================================
 import json
+import math
 import matplotlib.pyplot as plt
 from matplotlib import __version__ as mpl_version
 import numpy as np
@@ -74,7 +75,7 @@ class Scatter(Plot, object):
         if len(data[0][1]) != len(data[1][1]):
             raise ScatterException('Number of instances for each competitor must be the same')
 
-        step = int((self.x_max - self.x_min) / 10)
+        step = math.ceil((self.x_max - self.x_min) / 10)
         x = np.arange(self.x_min, self.x_max + self.x_min + step, step)
 
         # "good" area
@@ -88,31 +89,34 @@ class Scatter(Plot, object):
         plt.ylim([self.y_min, self.y_max])
 
         # timeout lines
-        plt.axvline(self.timeout, linewidth=1, color='red', ls=':',
-            label=str(self.timeout), zorder=3)
-        plt.axhline(self.timeout, linewidth=1, color='red', ls=':',
-            label=str(self.timeout), zorder=3)
+        if self.tlb_loc != 'none':
+            plt.axvline(self.timeout, linewidth=1, color='red', ls=':',
+                label=str(self.timeout), zorder=3)
+            plt.axhline(self.timeout, linewidth=1, color='red', ls=':',
+                label=str(self.timeout), zorder=3)
 
-        if self.tlb_loc == 'after':
-            plt.text(2 * self.x_min, self.timeout + self.x_max / 40,
-                self.t_label, horizontalalignment='left',
-                verticalalignment='bottom', fontsize=self.f_props['size'] * 0.8)
-            plt.text(self.timeout + self.x_max / 40, 2 * self.x_min,
-                self.t_label, horizontalalignment='left',
-                verticalalignment='bottom', fontsize=self.f_props['size'] * 0.8,
-                rotation=90)
-        else:
-            plt.text(2 * self.x_min, self.timeout - self.x_max / 3.5,
-                self.t_label, horizontalalignment='left',
-                verticalalignment='bottom', fontsize=self.f_props['size'] * 0.8)
-            plt.text(self.timeout - self.x_max / 3.5, 2 * self.x_min,
-                self.t_label, horizontalalignment='left',
-                verticalalignment='bottom', fontsize=self.f_props['size'] * 0.8,
-                rotation=90)
+            if self.tlb_loc == 'after':
+                plt.text(2 * self.x_min, self.timeout + self.x_max / 40,
+                    self.t_label, horizontalalignment='left',
+                    verticalalignment='bottom', fontsize=self.f_props['size'] * 0.8)
+                plt.text(self.timeout + self.x_max / 40, 2 * self.x_min,
+                    self.t_label, horizontalalignment='left',
+                    verticalalignment='bottom', fontsize=self.f_props['size'] * 0.8,
+                    rotation=90)
+            else:
+                plt.text(2 * self.x_min, self.timeout - self.x_max / 3.5,
+                    self.t_label, horizontalalignment='left',
+                    verticalalignment='bottom', fontsize=self.f_props['size'] * 0.8)
+                plt.text(self.timeout - self.x_max / 3.5, 2 * self.x_min,
+                    self.t_label, horizontalalignment='left',
+                    verticalalignment='bottom', fontsize=self.f_props['size'] * 0.8,
+                    rotation=90)
 
         # scatter
         plt.scatter(data[0][1], data[1][1], c=self.marker_style['color'],
-            marker=self.marker_style['marker'], s=self.marker_style['size'],
+            marker=self.marker_style['marker'],
+            edgecolors=self.marker_style['edgecolor'],
+            s=self.marker_style['size'],
             alpha=self.alpha, zorder=5)
 
         # axes' labels

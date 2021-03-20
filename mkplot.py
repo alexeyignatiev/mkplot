@@ -32,9 +32,10 @@ def parse_options():
 
     try:
         opts, args = getopt.getopt(sys.argv[1:],
-                                   'a:b:c:df:hj:k:lp:r:t:',
+                                   'a:b:c:df:hj:k:lnp:r:t:',
                                    ['alpha=',
                                     'backend=',
+                                    'by-name',
                                     'config=',
                                     'dry-run',
                                     'font=',
@@ -118,6 +119,8 @@ def parse_options():
             options['lgd_loc'] = str(arg)
         elif opt == '--lncol':
             options['lgd_ncol'] = int(arg)
+        elif opt in ('-n', '--by-name'):
+            options['by_name'] = True
         elif opt == '--only':
             options['only'] = [t.strip() for t in str(arg).split(',')]
         elif opt in ('-p', '--plot-type'):
@@ -197,6 +200,7 @@ def usage():
     print('                                        Available values: upper/center/lower left/right, center, best, off (default = upper left)')
     print('        --lncol=<int>                   Number of columns in the legend')
     print('                                        Available values: [1 .. INT_MAX] (default = 1)')
+    print('        -n, --by-name                   Assign line style to tools by their name')
     print('        --only=<string-list>            Comma-separated list of names')
     print('                                        Format: "tool1,tool2" (default = none)')
     print('        -p, --plot-type=<string>        Plot type to produce')

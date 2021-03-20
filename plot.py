@@ -46,16 +46,17 @@ class Plot():
         self.y_max   = options['y_max']
         self.y_min   = options['y_min']
 
-        self.lgd_loc     = options['lgd_loc']
-        self.lgd_ncol    = options['lgd_ncol']
-        self.lgd_alpha   = options['lgd_alpha']
-        self.lgd_fancy   = options['lgd_fancy']
-        self.lgd_shadow  = options['lgd_shadow']
+        self.lgd_loc    = options['lgd_loc']
+        self.lgd_ncol   = options['lgd_ncol']
+        self.lgd_alpha  = options['lgd_alpha']
+        self.lgd_fancy  = options['lgd_fancy']
+        self.lgd_shadow = options['lgd_shadow']
 
         self.no_grid    = options['no_grid']
         self.grid_color = options['grid_color']
         self.grid_style = options['grid_style']
         self.grid_width = options['grid_width']
+        self.byname     = options['by_name']
 
         # where to save
         self.save_to = '{0}.{1}'.format(os.path.splitext(self.save_to)[0], self.backend)

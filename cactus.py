@@ -50,8 +50,16 @@ class Cactus(Plot, object):
         lines = plt.plot(*coords, zorder=3)
 
         # setting line styles
+        if self.byname == False:  # by default, assign fist line to best tool
+            lmap = lambda i: i
+        else:  # assign line styles by tool name
+            tnames = [(d[0], i) for i, d in enumerate(data)]
+            tnames.sort(key=lambda pair: pair[0])
+            tmap = {tn[1]: i for i, tn in enumerate(tnames)}
+            lmap = lambda i: tmap[i]
+
         for i, l in enumerate(lines):
-            plt.setp(l, **self.linestyles[i % len(self.linestyles)])
+            plt.setp(l, **self.linestyles[lmap(i) % len(self.linestyles)])
 
         # turning the grid on
         if not self.no_grid:
