@@ -103,7 +103,7 @@ class Plot():
             plt.switch_backend(self.backend)
         elif self.backend == 'pgf':  # PGF/TikZ
             pgf_params = {'pgf.texsystem': 'pdflatex',
-                          'pgf.preamble': [r'\usepackage[utf8x]{inputenc}', r'\usepackage[T1]{fontenc}']}
+                          'pgf.preamble': r'\usepackage[utf8x]{inputenc} \usepackage[T1]{fontenc}'}
             params.update(pgf_params)
             plt.rcParams.update(params)
             plt.switch_backend(self.backend)
