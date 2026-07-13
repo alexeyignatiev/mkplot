@@ -78,6 +78,11 @@ class Plot():
 
         plt.rc('text', usetex=options['usetex'])
         plt.rc('font', **self.f_props)
+        plt.rc('text.latex', preamble=r'\usepackage{amsmath}')
+        plt.rcParams["text.latex.preamble"].join([
+            r"\usepackage{amsmath}",
+            r'\mathchardef\mhyphen="2D'
+        ])
 
         # figure properties
         nof_subplots = 1
